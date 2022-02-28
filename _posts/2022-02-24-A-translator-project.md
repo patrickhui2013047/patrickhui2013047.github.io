@@ -18,10 +18,13 @@ To prevent conflict, a single provider class can only implement one kind of prov
 All the provider follow the same naming rule `[NameOfService|NameOfProvider][Text|Translation|Display]Provider`, like `ClipboardTextProvider`, `DummyTranslationProvider` and `ConsoleDisplayProvider`.
 Since the providers' class name are used as their unique indenifer, all the provider class should not share the same name.
 
-## 24/02/2022 Progress log
+ ## 25/02/2022 Progress log
+ - [x] GUI Main Window
+ - [x] GUI Setting Configuration Helper main frame
+
+ ## 24/02/2022 Progress log
  - [x] Core structure
  - [x] Console UI for testing only
  - [x] ClipboardTextProvider
  - [x] DummyTranslationProvider
  - [x] ConsoleDisplayProvider
- - [x]
