@@ -15,8 +15,24 @@ The program included three core module `TextProvider`, `TranslationProvider` and
 
 All the providers must implement their own interface `ITextProvider`, `ITranslationProvider` and `IDisplayProvider`. 
 To prevent conflict, a single provider class can only implement one kind of provider.
-All the provider follow the same naming rule `[NameOfService|NameOfProvider][Text|Translation|Display]Provider`, like `ClipboardTextProvider`, `DummyTranslationProvider` and `ConsoleDisplayProvider`.
+All the provider should follow the same naming rule `[NameOfService|NameOfProvider][Text|Translation|Display]Provider`, like `ClipboardTextProvider`, `DummyTranslationProvider` and `ConsoleDisplayProvider`.
 Since the providers' class name are used as their unique indenifer, all the provider class should not share the same name.
+
+---
+ ## 15/03/2022 Progress log
+ - [ ] `OCRTextProvider` 
+ - [ ] `ImageFileCaptureModule` 
+ - [x] `WinAPICaptureModule` (not yet tested)
+ - [x] `TesseractOCRModule` (not yet tested)
+
+
+ ## 12/03/2022 Progress log
+ - [x] General setting page done
+ - [x] `ClipboardTextProvider` setting page with Test function
+
+ ## 28/02/2022 Progress log
+ - [x] Changed `ProviderSetting`'s `Properties` from `Dictionary<string,string>` to `NameValueCollection`, due to setting is not editable in UI.
+ 
 
  ## 25/02/2022 Progress log
  - [x] GUI Main Window
